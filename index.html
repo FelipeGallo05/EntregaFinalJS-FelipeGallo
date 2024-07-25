@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Analis de tiro NBA</title>
+</head>
+<body>
+    <main>
+        <section class="landing">
+            <div class="landing-content">
+                <h1 class="titulo" style="color:white">Analisis de tiros NBA</h1>
+                <img src="/imgs/jordan poole.jpg" alt="banner dennis rodman NBA">
+            </div>
+        </section>
+        <section>
+            <div class="explicacion">
+                <div>
+                    <h2 style="color: white;">Las zonas a evaluar seran las siguientes: </h2>
+                </div>
+                <div>
+                    <img class='shot-chart' src="./imgs/esquina-izquierda.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="zona">
+            <div>
+                <h2 style="color: white;">Agregar nueva sesion de tiro o partido</h2>
+                <form id="formulario">
+                    <label style="color: white;" for="zona">Zona: </label>
+                    <input  type="zona" id='zonaDeTiro'placeholder="Ingrese la zona de tiro ">
+                    <label style="color: white;" for="intentos" >Tiros intentados: </label>
+                    <input type="intentos" id='tirosIntentados' placeholder="Ingrese la cantidad de tiros intentados ">
+                    <label style="color: white;" for="encestados">Tiros encestados: </label>
+                    <input type="encestados" id="tirosEncestados" placeholder="Ingrese la cantidad de tiros encestados">
+                    <button id="submit">Ingresar</button>
+                </form>
+            </div>
+        </div>
+        
+        <div id="sesiones"></div>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
