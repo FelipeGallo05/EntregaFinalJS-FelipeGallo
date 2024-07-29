@@ -25,7 +25,7 @@ h1{
 .titulo{
     position: absolute;
     color: white;
-    z-index: 100;
+    z-index: 2;
     left: 30%;
 }
 
@@ -41,10 +41,11 @@ h1{
     top: 80px;
     left: 40%;
     position: absolute;
+    border-radius: 5px;
 }
 
 .explicacion{
-    margin-top: 100px;
+    margin-top: 0;
 }
 
 .explicacion h2{
@@ -120,7 +121,7 @@ h1{
 .sesionesDeTiro{
     padding: 10px;
     border-radius: 5px;
-    width: auto;
+    width: 200px;
     height: auto;
 }
 
@@ -130,4 +131,81 @@ h1{
         height: 300px;
         object-fit: cover;
     }
+}
+
+#boton{
+    position: fixed;
+    z-index: 5;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px; 
+    background-image: url("../imgs/pelota-basquet.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 200px;
+}
+
+#boton-contenido{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #d7d7d7fc;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 100vh;
+}
+
+.hidden{
+    display: none;
+}
+
+.tarjetero h2{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.tarjeta{
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 30px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta button{
+    width: 100px;
+}
+
+.tarjeta button a{
+    text-decoration: none;
+    color: black;
+}
+
+.tarjetero{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.tarjeta h4{
+    margin-top: 10px;
+}
+
+.tarjeta img{
+    color: transparent;
+    object-fit: contain;
+    width: 300px;
+    height: 400px;
+    margin-top: 10px;
 }

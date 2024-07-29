@@ -17,6 +17,7 @@ const tirosEncestadosIngresada = document.getElementById('tirosEncestados');
 const submit = document.getElementById('submit')
 const sesionesDeTiro = document.getElementById("sesiones")
 
+
 class Sesion{
     constructor(zona, tirosIntentados, tirosEncestados){
         this.zona = zona
@@ -109,3 +110,15 @@ function colorDeFondo(){
             return "arribaDelPromedio"
     }
     }
+
+
+document.getElementById('boton').addEventListener('click', function() {
+    const botonContenido = document.getElementById('boton-contenido');
+    if (botonContenido.classList.contains('hidden')) {
+        botonContenido.classList.remove('hidden');
+        botonContenido.style.display = 'block';
+    } else {
+        botonContenido.classList.add('hidden');
+        botonContenido.style.display = 'none';
+    }
+});
