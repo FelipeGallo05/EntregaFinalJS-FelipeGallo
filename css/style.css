@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 html{
     background-color: rgb(16, 16, 16);
 }
@@ -142,12 +144,15 @@ h1{
         top: 200px;
         left: 0;
         height: auto;
-        width: 100%;
+        width: 90%;
         padding: 30px;
         display: block;
     }
     .explicacion-contenido{
         margin-top: 50px;
+    }
+    #boton-contenido{
+        overflow-y: scroll;
     }
 }
 
@@ -173,12 +178,11 @@ h1{
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
     background-color: #d7d7d7fc;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    height: 100%;
+    height: auto;
 }
 
 .hidden{
@@ -216,8 +220,15 @@ h1{
     flex-wrap: wrap;
 }
 
+.tarjeta h2{
+    font-weight: 800;
+    font-size: 20px;
+}
+
 .tarjeta h4{
     margin-top: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 300;
 }
 
 .tarjeta img{
