@@ -6,10 +6,11 @@ let sesiones = []
 const formulario = document.getElementById("formulario")
 
 //Evitando que se me reinicie el formulario siempre
-
-formulario.addEventListener("submit",(e)=>{
-    e.preventDefault();
-});
+function evitarReinicio(){
+    formulario.addEventListener("submit",(e)=>{
+        e.preventDefault();
+    });
+}
 
 const zonaDeTiro = document.getElementById('zonaDeTiro');
 const tirosIntentadosIngresada = document.getElementById('tirosIntentados');
@@ -50,6 +51,7 @@ function crearSesion(){
 }
 
 submit.addEventListener('click', () => {
+    evitarReinicio()
     const zona = zonaDeTiro.value
     const tirosIntentados = tirosIntentadosIngresada.value
     const tirosEncestados = tirosEncestadosIngresada.value

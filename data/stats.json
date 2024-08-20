@@ -1,0 +1,29 @@
+{
+    "1":{
+        "nombre": "Stephen Curry",
+        "altura": 1.88,
+        "peso": 83,
+        "posicion": "base",
+        "TC": 47.3,
+        "Triple": 42.6 ,
+        "img": "../imgs/curryst01.jpg"
+    },
+    "2":{
+        "nombre": "LeBron James",
+        "altura": 2.06,
+        "peso": 113,
+        "posicion": "Alero",
+        "TC": 50.6,
+        "Triple": 34.8,
+        "img": "../imgs/jamesle01.jpg"
+    },
+    "3":{
+        "nombre": "Dirk Nowitzki",
+        "altura": 2.13,
+        "peso": 111,
+        "posicion": "Ala Pivot",
+        "TC": 47.1,
+        "Triple": 38.0,
+        "img": "../imgs/nowitdi01.jpg"
+    }
+}
