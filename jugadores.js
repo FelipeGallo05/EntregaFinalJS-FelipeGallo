@@ -2,7 +2,7 @@
 
 
 
-fetch('/data/stats.json')
+fetch('./data/stats.json')
 .then(response => {
     return response.json();
 })
