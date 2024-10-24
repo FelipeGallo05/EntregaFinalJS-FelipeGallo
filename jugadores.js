@@ -1,7 +1,4 @@
 
-
-
-
 fetch('/data/stats.json')
 .then(response => {
     return response.json();
